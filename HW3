@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+class MET { //missing transverse enrgy
+    
+    private:
+    	int METx;
+      int METy;
+    
+    public:
+    	int x() const {return METx;} //x-component
+    	int y() const {return METy;} //y-component
+      int METvalue() const {return std:: sqrt(METx*METx+METy*METy);} //magnitude
+      int phi() const {return std:: atan2(METx,METy);} //angle
+  
+};  
+
+int main() { 
+  
+  
+  return 0;
+}
